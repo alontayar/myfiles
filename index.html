@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Retro File Viewer</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: Tahoma, sans-serif;
+      padding: 20px;
+    }
+    .file-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+    }
+    .file {
+      text-align: center;
+      font-size: 12px;
+    }
+    .file img {
+      width: 48px;
+      height: 48px;
+      display: block;
+      margin: 0 auto 4px;
+    }
+    .file a {
+      color: black;
+      text-decoration: none;
+    }
+    .file a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>📁 My Files</h1>
+  <div class="file-grid">
+    <div class="file">
+      <a href="files/document.pdf" target="_blank">
+        <img src="icons/pdf-icon.png" alt="PDF">
+        <div>document.pdf</div>
+      </a>
+    </div>
+    <div class="file">
+      <a href="files/song.mp3" target="_blank">
+        <img src="icons/mp3-icon.png" alt="MP3">
+        <div>song.mp3</div>
+      </a>
+    </div>
+    <div class="file">
+      <a href="files/note.doc" target="_blank">
+        <img src="icons/doc-icon.png" alt="DOC">
+        <div>note.doc</div>
+      </a>
+    </div>
+    <div class="file">
+      <a href="https://example.com" target="_blank">
+        <img src="icons/link-icon.png" alt="Link">
+        <div>example.com</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
